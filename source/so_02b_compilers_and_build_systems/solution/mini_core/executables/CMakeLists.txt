@@ -1,0 +1,5 @@
+add_executable(my_executable_topolino
+  many_object_in_stack_example.cpp)
+
+target_link_libraries(my_executable_topolino
+  mini_core_library_topolino)

@@ -8,7 +8,7 @@ HEADERS=linked_list.h
 
 LIBS=liblinkedlist.a
 
-BINS=linked_list_test\
+BINS=linked_list_test  linked_list_exercise_3
 
 #disastros_test
 
@@ -26,6 +26,9 @@ liblinkedlist.a: $(OBJS)
 
 
 linked_list_test:	linked_list_test.c $(LIBS)
+	$(CC) $(CCOPTS) -o $@ $^
+
+linked_list_exercise_3:	linked_list_exercise_3.c $(LIBS)
 	$(CC) $(CCOPTS) -o $@ $^
 
 clean:
